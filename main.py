@@ -1,5 +1,6 @@
 
 import os
+import pyfiglet 
 from colorama import Back, Fore, init
 
 init(autoreset=True)
@@ -9,17 +10,14 @@ init(autoreset=True)
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
+texto_formatado = pyfiglet.figlet_format("Calculadora de Quebra", font="slant", width=200)
+print(texto_formatado)
 # Exibe a tela inicial do programa
 def tela_inicial():
-    print(Fore.YELLOW + '-=-' * 23)
+    print(Fore.YELLOW + '-=-' * 30)
 
-    print(
-        Back.LIGHTBLACK_EX
-        + ' Este programa serve para facilitar o seu cálculo de quebra de'
-        ' pallets. '
-    )
-    input(Back.LIGHTBLACK_EX + ' Pressione Enter para continuarmos... ')
+    print(' Este programa serve para facilitar o seu cálculo de quebra de pallets.')
+    input(' Pressione Enter para continuarmos... ')
     limpar_tela()
 
 
