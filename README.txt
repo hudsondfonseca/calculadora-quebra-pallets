@@ -78,8 +78,7 @@ pip install colorama
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-```
+git clone  https://github.com/hudsondfonseca/calculadora-quebra-pallets.git
 
 Entre na pasta do projeto:
 
